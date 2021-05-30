@@ -1,0 +1,51 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "OpenAPI",
+    "description" : "Specification for api",
+    "contact" : {
+      "name" : "Hemalatha",
+      "email" : "hemanani543@gmail.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://dev.example.com",
+    "description" : "Devlopement Server"
+  } ],
+  "paths" : {
+    "/v1/Home" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Default values"
+          }
+        }
+      },
+      "put" : {
+        "responses" : {
+          "201" : {
+            "description" : "create row with profileId"
+          }
+        }
+      }
+    },
+    "/v1/random" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "practice"
+          },
+          "404" : {
+            "description" : "No account  found"
+          }
+        }
+      }
+    }
+  },
+  "components" : { }
+}
